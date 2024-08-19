@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operadores Logicos</h1>
+    <script>
+        // Operadores Lógicos em JavaScript
+
+        // Operador AND (&&)
+        let a = true;
+        let b = false;
+        console.log(a && b); // false - Ambos precisam ser verdadeiros para retornar true
+        console.log(a && true); // true - Ambos são verdadeiros
+
+        // Operador OR (||)
+        console.log(a || b); // true - Pelo menos um precisa ser verdadeiro
+        console.log(b || false); // false - Ambos são falsos
+
+        // Operador NOT (!)
+        console.log(!a); // false - Inverte o valor de a (true para false)
+        console.log(!b); // true - Inverte o valor de b (false para true)
+
+        // Combinação de operadores lógicos
+        let c = true;
+        console.log((a && b) || c); // true - (false || true) resulta em true
+        console.log(!(a && b)); // true - Inverte o resultado de (a && b), que é false
+
+    </script>
+</body>
+</html>
