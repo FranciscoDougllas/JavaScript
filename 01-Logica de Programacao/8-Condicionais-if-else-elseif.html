@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais If else elseif</title>
+</head>
+<body>
+    <h1>Condicionais em JavaScript</h1>
+    <h2>if else elseif</h2>
+
+    <script>
+        
+        const n1 = parseInt(prompt('Digite um numero: '));
+        const n2 = parseInt(prompt('Digite outro numero: '));
+
+        let soma = n1 + n2;
+        alert(`A Soma dos numeros e ${soma}`);
+
+        let media = soma / 2;
+        alert(`A media dos numeros e ${media}`);
+
+        if(media >= 7 && media <= 10){
+            alert(`Com a media de ${media} Aprovado`);
+        }else if(media <= 6.9 && media >= 5){
+            alert(`Com a media de ${media} Recuperação`);
+        }else{
+            alert(`Com a media de ${media} Reprovado`)
+        }
+    </script>
+</body>
+</html>
