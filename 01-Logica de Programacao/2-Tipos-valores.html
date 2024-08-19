@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados</title>
+</head>
+<body>
+    <h1>Tipos de Dados em JavaScript</h1>
+    <script>
+        let num1 = parseInt(prompt("Digite um numero: "));
+        let num2 = parseInt(prompt('Digite outro numero: '));
+        let soma = num1 + num2;
+
+        alert(`A Soma dos Numeros e ${soma}`)
+
+        // Tipos de dados em JavaScript
+
+        // 1. String: Representa uma sequência de caracteres
+        let saudacao = "Olá, mundo!";
+        console.log(saudacao); // Saída: Olá, mundo!
+
+        // 2. Number: Representa números, tanto inteiros quanto de ponto flutuante
+        let idade = 25; // Número inteiro
+        let altura = 1.75; // Número de ponto flutuante
+        console.log(idade); // Saída: 25
+        console.log(altura); // Saída: 1.75
+
+        // 3. Boolean: Representa valores verdadeiros ou falsos
+        let aprovado = true;
+        let reprovado = false;
+        console.log(aprovado); // Saída: true
+        console.log(reprovado); // Saída: false
+
+        // 4. Null: Representa a ausência intencional de um valor
+        let vazio = null;
+        console.log(vazio); // Saída: null
+
+        // 5. Undefined: Representa uma variável que foi declarada, mas não inicializada
+        let indefinido;
+        console.log(indefinido); // Saída: undefined
+
+        // 6. Object: Representa uma coleção de propriedades e métodos
+        let pessoa = {
+            nome: "João",
+            idade: 30,
+            cidade: "São Paulo"
+        };
+        console.log(pessoa); // Saída: { nome: 'João', idade: 30, cidade: 'São Paulo' }
+
+        // 7. Array: Representa uma lista ordenada de valores
+        let frutas = ["Maçã", "Banana", "Laranja"];
+        console.log(frutas); // Saída: [ 'Maçã', 'Banana', 'Laranja' ]
+
+        // 8. BigInt: Representa números inteiros de precisão arbitrária
+        let numeroGrande = 1234567890123456789012345678901234567890n;
+        console.log(numeroGrande); // Saída: 1234567890123456789012345678901234567890n
+
+        // 9. Symbol: Representa um valor único e imutável
+        let simbolo = Symbol("descricao");
+        console.log(simbolo); // Saída: Symbol(descricao)
+
+    </script>
+</body>
+</html> 

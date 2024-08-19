@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variaveis em JavaScript</h1>
+
+    <script>
+       //Temos 2 formas de declara variaveis
+        // let: Permite declarar variáveis que podem ser reatribuídas
+        // const: Permite declarar variáveis que não podem ser reatribuídas
+
+        let nome = "João"; // Variável mutável com o nome "João"
+        const idade = 30; // Variável constante com a idade 30 imutavel
+
+        // Imprimindo no console
+        console.log("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+
+        // Imprimindo na página (não recomendado para aplicações complexas)
+        document.write("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+
+        // Inserindo o valor em um elemento HTML
+        let paragrafo = document.getElementById("meuParagrafo");
+        paragrafo.textContent = "Olá, meu nome é " + nome + " e tenho " + idade + " anos.";
+
+        //Comando prompt funciona com o input do Python
+        const resposta = prompt("Digite sua resposta: ");
+        console.log(resposta);
+
+
+    </script>
+</body>
+</html>
