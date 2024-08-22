@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes</title>
+
+    <style>
+        body {
+            background-color: rgb(70, 142, 236);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .mostraTabuada {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        button, input{
+            margin: 10px;
+            padding: 10px;
+        }
+        .container{
+            border: 5px solid #7f7e87;
+            width: 350px;
+            padding: 20px;
+            background: linear-gradient(#544d4d, #a9adcf);
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            box-shadow: 0 0 20px #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funcoes</h1>
+
+    <div class="container">
+        <label for="number">Digite o numero:</label>
+        <input type="number" name="" id="number">
+        <button id="calcular">Calcular</button>
+        <button id="limpar">Limpar</button>
+        <div class="mostraTabuada">Tabuada</div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#calcular');
+        const Tabuada = document.querySelector('.mostraTabuada');
+        const limpar = document.querySelector('#limpar');
+
+        function gerarTabuada() {
+            const num = document.querySelector('#number').value;
+            let i = 1;
+            while (i <= 10) {
+                Tabuada.innerHTML += `<p>${num} x ${i} = ${num * i}</p>`
+                i++;
+            }gerarTabuada
+        }
+
+        btn.addEventListener('click', gerarTabuada);
+        limpar.addEventListener('click', () => {
+            Tabuada.innerHTML = '';
+        })
+    </script>
+  
+</body>
+</html>

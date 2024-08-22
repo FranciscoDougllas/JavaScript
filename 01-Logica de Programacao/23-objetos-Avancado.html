@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Duplos</title>
+</head>
+<body>
+    <h1>Objetos Internos</h1>
+
+    <script>
+        const pessoa = {
+            endereco: {
+                bairro: 'Centro',
+                rua: 'Av. das Nações Unidas',
+                numero: 12,
+                complemento: 'Casa'
+            },
+
+            pessoal: {
+                nome: 'Francisco Douglas',
+                idade: 27,
+                sexo: 'Masculino',
+                casado: 'Sim',
+                Profissao: 'Desenvolvedor'
+            }
+        }
+
+        document.write(`${pessoa.pessoal['nome']} tem ${pessoa.pessoal['idade']} anos e ${pessoa.pessoal['casado']} e trabalha como ${pessoa.pessoal['Profissao']}.<br><hr>`)
+
+        document.write(`${pessoa.pessoal['nome']} Mora em ${pessoa.endereco['rua']} no ${pessoa.endereco['numero']}.<br><hr>`)
+
+
+        //Utilizando o Loop For in
+        for (let chave in pessoa.pessoal) {
+            document.write(`${chave}: ${pessoa.pessoal[chave]}<br>`)
+        }
+    </script>
+</body>
+</html>

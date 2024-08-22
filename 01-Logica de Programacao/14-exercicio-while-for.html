@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>While e For</h1>
+
+    <script>
+        let dado1 = parseInt(Math.random() * 6 + 1);
+        let dado2 = parseInt(Math.random() * 6 + 1);
+
+        let contador = 0;
+        while(dado1 !== dado2){
+            document.write(`${dado1}, ${dado2}<br>`);
+            contador ++;
+            dado1 = parseInt(Math.random() * 6 + 1);
+            dado2 = parseInt(Math.random() * 6 + 1);
+        }
+
+        document.write(`<p>Foram necessárias ${contador} jogadas para que o dado1 e o dado2 fossem iguais.</p>`);
+    </script>
+</body>
+</html>

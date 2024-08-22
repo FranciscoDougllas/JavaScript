@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Metodo push</h1>
+
+    <script>
+        let nomes = [
+                    "João",
+                    "Maria",
+                    "Pedro",
+                    "Ana",
+                    "Carlos",
+                    "Beatriz",
+                    "Luiz",
+                    "Gabriela",
+                    "Rafael",
+                    "Isabela"
+                    ];
+        //Tamanho da lista
+        document.write(`Ao todo temos ${nomes.length} nomes na lista.<br>`);
+
+        //Adiciona nome no fim do array
+        nomes.push('Nome');
+        document.write(`Nome adicionado: ${nomes[nomes.length - 1]}`);
+
+    </script>
+</body>
+</html>

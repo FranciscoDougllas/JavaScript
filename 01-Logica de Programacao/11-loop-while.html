@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 550px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+
+        button{
+            margin: 20px;
+            padding: 20px;
+            font-size: 2rem;
+            border-radius: 20px;
+        }
+        input{
+            padding: 10px;
+        }
+        .saida {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loop While Tabuada Teste</h1>
+    <label for="num">Numero:</label>
+    <input type="number" name="num" id="num">
+    <label for="ate">Conta ate:</label>
+    <input type="number" name="ate" id="ate">
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+
+    <div class="saida">
+        <p>Tabuada</p>
+    </div>
+
+    <script>
+        function gerarTabuada() {
+            const num = document.querySelector("#num").value;
+            const ate = document.querySelector("#ate").value;
+            const saida = document.querySelector(".saida");
+
+            saida.innerHTML = `<p>Tabuada de ${num}</p>`;
+
+            let i = 1;
+            while (i <= ate) {
+                saida.innerHTML += `<p>${num} x ${i} = ${num * i}</p>`
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>

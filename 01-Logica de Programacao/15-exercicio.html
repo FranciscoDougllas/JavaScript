@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio</title>
+</head>
+<body>
+  <h1>Exercicio com While</h1>
+
+  <script>
+    const num = parseInt(prompt("Conta ate o numero: "));
+
+    let contador = 0;
+    while(contador <= num){
+      if(contador % 10 === 0){ // Corrigido de 10 para 0
+        document.write(`<p><hr></p>`)
+      }else{
+        document.write(`<p>${contador} + ${num} = ${contador + num}</p>`)
+      }
+      contador++; // Adicionado contador++ para incrementar o contador
+    }
+  </script>
+</body>
+</html>

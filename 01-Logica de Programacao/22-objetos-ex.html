@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio</h1>
+
+    <script>
+        const carro = {
+            modelo: 'Palio',
+            ano: 2010,
+            km: 120000,
+            cor: 'Prata',
+            preco: 20000,
+            combustivel: 'Flex',
+            kmLitro: 12
+        }
+
+        document.write(`O Carro ${carro.modelo} do ano ${carro.ano} que esta com ${carro.km} Km rodados <br>`);
+        document.write(`Cor do Carro ${carro.cor} Combustivel ${carro.combustivel} Custa ${carro.preco}<br>`);
+
+        const gastoL = (carro.km / carro.kmLitro);
+        document.write(`O Carro gastou ao todo ${gastoL} Litros de combustivel`)
+
+        //Adicionando dados ao Objeto
+        carro['Marca'] = 'Fiat';
+        carro['peso'] = 2000;
+
+        document.write(`<br> O carro ${carro['modelo']} da marca ${carro['Marca']}<br>`);
+        document.write(carro['peso'])
+    </script>
+</body>
+</html>

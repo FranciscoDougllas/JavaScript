@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dados = [
+                    "João", // string
+                    25, // número
+                    23,
+                    true, // boolean
+                    null, // null
+                    undefined, // undefined
+                    "Rua ABC, 123", // string
+                    123.45, // número decimal
+                    "joao@email.com", // string
+                    [1, 2, 3], // array
+                    {nome: "João", idade: 25}, // objeto
+                    "2022-01-01", // string (data)
+                    10.99, // número decimal
+                    "Sim", // string
+                    false, // boolean
+                    "Não", // string
+                    500, // número
+                    "kg", // string
+                    "Verde", // string
+                    3.14, // número decimal
+                    "2022-12-31", // string (data)
+                    23
+                    ];
+
+            let soma = 0
+            let total = 0
+            for(let i = 0; i <= dados.length; i ++){
+                if(typeof dados[i] === "number"){
+                    soma += dados[i];
+                    total += 1
+                }else{
+                    continue
+                }
+            }
+            document.write(`A Soma dos ${total} numeros e ${soma} <br>`)
+
+            //Analise do Dado Central
+            let totalDados = dados.length
+            document.write(`Total de dados ${totalDados}<br>`)
+            let meio = dados.length / 2;
+            document.write(`Dados do Meio ${dados[meio]}`)
+    </script>
+</body>
+</html>
