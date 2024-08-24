@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Formas de Declara Funcoes</h1>
+
+    <script>
+        //Declaração de função
+        function minhaFuncao() {
+            console.log("Eu sou uma função declarada!");
+          }
+          
+          minhaFuncao(); // imprime "Eu sou uma função declarada!"
+
+
+          //Expressão de função
+          let minhaFuncao2 = function() {
+            console.log("Eu sou uma função expressão!");
+          }
+          
+          minhaFuncao2(); // imprime "Eu sou uma função expressão!"
+
+
+          //Anônima
+          let minhaFuncao3 = function() {
+            console.log("Eu sou uma função anônima!");
+          }
+          
+          minhaFuncao3(); // imprime "Eu sou uma função anônima!"       
+
+
+          //Arrow Function   
+          let minhaFuncao4 = () => {
+            console.log("Eu sou uma função Arrow Function!");
+          }
+          
+          minhaFuncao4(); // imprime "Eu sou uma função Arrow Function!"
+
+
+          //Função Construtora
+          function Pessoa(nome, idade) {
+            this.nome = nome;
+            this.idade = idade;
+          }
+          
+          let pessoa = new Pessoa("João", 30);
+          console.log(pessoa.nome); // imprime "João"
+          console.log(pessoa.idade); // imprime 30
+          
+          //Funcao imediata
+          let minhaFuncao5 = function() {
+            console.log("Eu sou uma função imediata!");
+          }
+          
+          minhaFuncao5(); // imprime "Eu sou uma função imediata!"
+
+    </script>
+</body>
+</html>

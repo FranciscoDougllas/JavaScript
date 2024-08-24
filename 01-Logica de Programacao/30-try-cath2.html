@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // area.js
+
+        function CalcularAreaRetangulo(largura, altura) {
+            if (typeof largura !== 'number' || typeof altura !== 'number') {
+            throw new Error('Os parâmetros largura e altura devem ser números');
+            }
+            if (largura <= 0 || altura <= 0) {
+            throw new Error('Os parâmetros largura e altura devem ser maiores que zero');
+            }
+            return largura * altura;
+        }
+        
+        function CalcularAreaTriangulo(base, altura) {
+            if (typeof base !== 'number' || typeof altura !== 'number') {
+            throw new Error('Os parâmetros base e altura devem ser números');
+            }
+            if (base <= 0 || altura <= 0) {
+            throw new Error('Os parâmetros base e altura devem ser maiores que zero');
+            }
+            return (base * altura) / 2;
+        }
+        
+
+
+        try {
+            console.log(CalcularAreaRetangulo(4, 5)); // imprime 20
+            console.log(CalcularAreaTriangulo(3, 6)); // imprime 9
+        } catch (error) {
+            console.error('Erro:', error.message);
+        }
+        
+
+
+        try {
+            console.log(CalcularAreaRetangulo('a', 5)); // lança exceção
+        } catch (error) {
+            console.error('Erro:', error.message);
+        }
+        
+
+        
+        try {
+            console.log(CalcularAreaTriangulo(3, -6)); // lança exceção
+        } catch (error) {
+            console.error('Erro:', error.message);
+        }
+    </script>
+</body>
+</html>

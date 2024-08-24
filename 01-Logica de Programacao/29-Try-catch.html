@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+</head>
+<body>
+    <h1>Uso do Try e Catch</h1>
+
+    <script>
+        try{
+            let a = 0;
+            let b = 11;
+            let soma = a + b;
+            alert(`A soma e ${soma}`);
+        }
+        catch(erro){
+            alert(`Erro: ${erro}`)
+        }
+
+        alert('Fim do programa');
+
+        //Outro exemplo
+        try{
+            function soma(a, b){
+                return a + b;
+            }
+            let a = 0;
+            let b = 11;
+            let soma = a + b;
+            alert(`A soma e ${soma}`);
+        }
+        catch(erro){
+            alert(`Erro: ${erro}`)
+        }
+    </script>
+</body>
+</html>
