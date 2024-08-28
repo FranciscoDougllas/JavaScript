@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Ternarios</title>
+</head>
+<body>
+    <h1>Operadores Ternarios</h1>
+
+    <script>
+        const nome = "João";
+        const idade = 25;
+        const resultado = idade >= 18 ? `Olá, ${nome}! Você é maior de idade.` : `Olá, ${nome}! Você é menor de idade.`;
+        console.log(resultado); // Saída: Olá, João! Você é maior de idade.
+
+
+        const frutas = ["maçã", "banana", "laranja"];
+        const resultado2 = frutas.length > 0 ? `O array de frutas tem ${frutas.length} elementos.` : "O array de frutas está vazio.";
+        console.log(resultado2); // Saída: O array de frutas tem 3 elementos.
+
+        const frutas2 = ["maçã", "banana", "laranja"];
+        const resultado3 = frutas.length > 0 ? `O array de frutas tem ${frutas.length} elementos.` : "O array de frutas está vazio.";
+        console.log(resultado3); // Saída: O array de frutas tem 3 elementos.
+    </script>
+</body>
+</html>
